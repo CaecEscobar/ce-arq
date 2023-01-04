@@ -1,0 +1,186 @@
+body {
+  background-image: var(--background-image);
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 60px auto;
+  width: 95%;
+}
+
+.btn-blue {
+  background-color: #4caf50; /* Green */
+  border: none;
+  width: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.logo-wide {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.ofertas {
+  width: 52%;
+}
+
+.exterior {
+  margin-top: 100px;
+  margin-right: 40px;
+  width: 45%;
+}
+
+.interior {
+  margin-top: -100px;
+  margin-left: 20px;
+  width: 42%;
+}
+
+.a360 {
+  margin-top: 60px;
+  width: 53%;
+}
+
+.plantas-arqs {
+  margin-top: -80px;
+  width: 30%;
+}
+
+.isometricos {
+  margin-top: 40px;
+  width: 65%;
+}
+
+.contacto {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 98%;
+  }
+
+  .logo-wide {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .ofertas {
+    width: 52%;
+  }
+
+  .exterior {
+    margin-top: 100px;
+    margin-right: 0px;
+    width: 45%;
+  }
+
+  .interior {
+    margin-top: -100px;
+    margin-left: 20px;
+    width: 42%;
+  }
+
+  .a360 {
+    margin-top: 60px;
+    width: 53%;
+  }
+
+  .plantas-arqs {
+    margin-top: -80px;
+    width: 30%;
+  }
+
+  .isometricos {
+    margin-top: 40px;
+    width: 65%;
+  }
+
+  .contacto {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: var(--background-image);
+    display: grid;
+    justify-content: center;
+    box-sizing: inherit;
+  }
+
+  .main-container {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .logo-wide {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  .ofertas {
+    width: 100%;
+  }
+
+  .exterior {
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .interior {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .a360 {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .plantas-arqs {
+    margin-top: 20px;
+    margin-left: 12.5%;
+    width: 75%;
+  }
+
+  .isometricos {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .contacto {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+}
