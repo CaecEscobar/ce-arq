@@ -385,8 +385,7 @@ ul {
   }
 
   .content-modal {
-    transform: scale(0.6);
-    width: 500px;
+    transform: scale(0.8);
   }
 
   .ofertas {
@@ -455,7 +454,7 @@ ul {
   }
 
   .content-modal {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 
   .ofertas {
