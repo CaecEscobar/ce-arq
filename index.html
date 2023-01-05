@@ -9,15 +9,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!–– <button class="btn-blue" value="blue">a</button> ––>
-
-    <select id="themeSelect">
-      <option value="blue">blue</option>
-      <option value="yellow">yellow</option>
-      <option value="red">red</option>
-      <option value="green">green</option>
-      <option value="dark">dark</option>
-    </select>
+    <header>
+      <nav>
+        <div class="themes">
+          <select class="themes-menu" id="themeSelect">
+            <option value="blue">AZUL</option>
+            <option value="yellow">AMARILLO</option>
+            <option value="red">ROJO</option>
+            <option value="green">VERDE</option>
+            <option value="dark">OSCURO</option>
+          </select>
+        </div>
+        <div class="lang-menu">
+          <div class="selected-lang">LANG</div>
+          <ul>
+            <li>
+              <a href="./index.html" class="es">ESP</a>
+            </li>
+            <li>
+              <a href="./index-ENG.html" class="en">ENG</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <img
       class="logo-wide"
       src="./assets/logo-wide.png"
@@ -40,8 +55,10 @@
         alt="isometricos"
       />
     </div>
-    <div>
-      <img class="contacto" src="./assets/contacto.png" alt="contacto" />
+    <div class="div-contacto">
+      <div>
+        <img class="contacto" src="./assets/contacto.png" alt="contacto" />
+      </div>
     </div>
     <script>
       function initThemeSelector() {
