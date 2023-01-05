@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C.Escobar</title>
+    <link rel="stylesheet" id="themeLink" href="./css/blue.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="themes">
+          <select class="themes-menu" id="themeSelect">
+            <option value="blue">BLUE</option>
+            <option value="yellow">YELLOW</option>
+            <option value="red">RED</option>
+            <option value="green">GREEN</option>
+            <option value="dark">DARK</option>
+          </select>
+        </div>
+        <div class="lang-menu">
+          <div class="selected-lang">LANG</div>
+          <ul>
+            <li>
+              <a href="./index.html" class="es">ESP</a>
+            </li>
+            <li>
+              <a href="./index-ENG.html" class="en">ENG</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <img
+      class="logo-wide"
+      src="./assets/logo-wide.png"
+      alt="logo-wide"
+      width="50%"
+    />
+    <div class="main-container">
+      <img class="ofertas" src="./assets/ofertas-ENG.png" alt="ofertas" />
+      <img class="exterior" src="./assets/exterior.png" alt="exterior" />
+      <img class="interior" src="./assets/interior.png" alt="interior" />
+      <img class="a360" src="./assets/360.png" alt="360" />
+      <img
+        class="plantas-arqs"
+        src="./assets/plantas-arqs-ENG.png"
+        alt="plantas-arqs"
+      />
+      <img
+        class="isometricos"
+        src="./assets/isometricos-ENG.png"
+        alt="isometricos"
+      />
+    </div>
+    <div class="div-contacto">
+      <div>
+        <img class="contacto" src="./assets/contacto-ENG.png" alt="contacto" />
+      </div>
+    </div>
+    <script>
+      function initThemeSelector() {
+        const themeSelect = document.getElementById("themeSelect");
+        const themeLink = document.getElementById("themeLink");
+        const currentTheme = localStorage.getItem("theme") || "blue";
+
+        function activateTheme(themeName) {
+          themeLink.setAttribute("href", `css/${themeName}.css`);
+        }
+
+        themeSelect.addEventListener("change", () => {
+          activateTheme(themeSelect.value);
+          localStorage.setItem("theme", themeSelect.value);
+        });
+
+        themeSelect.value = currentTheme;
+        activateTheme(currentTheme);
+      }
+
+      initThemeSelector();
+    </script>
+  </body>
+</html>
