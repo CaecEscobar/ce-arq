@@ -1,8 +1,17 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=PT+Sans:wght@700&display=swap");
+
 body {
   background-image: var(--background-image);
   display: flex;
   flex-direction: column;
   box-sizing: inherit;
+  font-family: "Bakbak One";
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-container {
@@ -14,62 +23,144 @@ body {
   width: 95%;
 }
 
-.btn-blue {
-  background-color: #4caf50; /* Green */
+nav {
+  background-color: #f2f2f0;
+  border: solid rgb(0, 0, 0);
+  border-width: 4px;
+  filter: drop-shadow(10px 10px #333333ab);
+  width: 40%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.themes {
+  margin-left: 50px;
+}
+
+.themes-menu {
+  background-color: #ffffff00;
   border: none;
-  width: 20px;
-  padding: 15px 32px;
-  text-align: center;
+}
+
+.lang-menu:hover ul {
+  display: block;
+}
+
+.lang-menu ul {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f2f2f0;
+  border: solid rgb(0, 0, 0);
+  border-width: 4px;
+  box-shadow: 0px 1px 10px black;
+  display: none;
+  position: absolute;
+}
+
+.lang-menu ul li {
+  list-style: none;
+}
+
+.lang-menu ul li a {
+  width: 125px;
+  display: block;
+  padding: 5px 10px;
+}
+
+.lang-menu ul li a:hover {
+  background-color: #f2f2f0;
+}
+
+.selected-lang {
+  cursor: pointer;
+  display: flex;
+  line-height: 2;
+  width: 100px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
 
 .logo-wide {
   display: block;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 30%;
 }
 
 .ofertas {
+  width: 51%;
+  cursor: pointer;
+}
+
+.ofertas:hover {
   width: 52%;
 }
 
 .exterior {
   margin-top: 100px;
   margin-right: 40px;
+  width: 44%;
+  cursor: pointer;
+}
+
+.exterior:hover {
   width: 45%;
 }
 
 .interior {
   margin-top: -100px;
   margin-left: 20px;
+  width: 41%;
+  cursor: pointer;
+}
+
+.interior:hover {
   width: 42%;
 }
 
 .a360 {
   margin-top: 60px;
+  width: 52%;
+  cursor: pointer;
+}
+
+.a360:hover {
   width: 53%;
 }
 
 .plantas-arqs {
   margin-top: -80px;
+  width: 29%;
+  cursor: pointer;
+}
+
+.plantas-arqs:hover {
   width: 30%;
 }
 
 .isometricos {
   margin-top: 40px;
+  width: 64%;
+  cursor: pointer;
+}
+
+.isometricos:hover {
   width: 65%;
 }
 
 .contacto {
-  display: block;
   margin: auto;
+  display: block;
   width: 20%;
 }
 
 @media (max-width: 768px) {
+  body {
+    background-size: 150%;
+  }
+
   .main-container {
     display: flex;
     flex-flow: row wrap;
@@ -77,6 +168,15 @@ body {
     justify-content: space-between;
     margin: 20px auto;
     width: 98%;
+  }
+
+  nav {
+    border-width: 3px;
+    width: 60%;
+  }
+
+  .lang-menu ul {
+    border-width: 3px;
   }
 
   .logo-wide {
@@ -126,10 +226,7 @@ body {
 
 @media (max-width: 425px) {
   body {
-    background-image: var(--background-image);
-    display: grid;
-    justify-content: center;
-    box-sizing: inherit;
+    background-size: 200%;
   }
 
   .main-container {
@@ -139,43 +236,49 @@ body {
     width: 100%;
   }
 
+  nav {
+    border-width: 2px;
+    width: 80%;
+  }
+
+  .lang-menu ul {
+    border-width: 2px;
+  }
+
   .logo-wide {
     display: block;
-    margin: auto;
-    margin-top: 20px;
+    margin: 30px auto 10px auto;
     width: 60%;
   }
 
   .ofertas {
-    width: 100%;
+    width: 80%;
+    margin: auto auto 10px 15%;
   }
 
   .exterior {
-    margin-top: 20px;
-    margin-right: 0px;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
   }
 
   .interior {
-    margin-top: 20px;
-    margin-left: 0px;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
   }
 
   .a360 {
-    margin-top: 20px;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
   }
 
   .plantas-arqs {
-    margin-top: 20px;
-    margin-left: 12.5%;
-    width: 75%;
+    width: 60%;
+    margin: 20px auto;
   }
 
   .isometricos {
-    margin-top: 20px;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
   }
 
   .contacto {
