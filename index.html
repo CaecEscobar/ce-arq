@@ -33,12 +33,71 @@
         </div>
       </nav>
     </header>
-    <img
-      class="logo-wide"
-      src="./assets/logo-wide.png"
-      alt="logo-wide"
-      width="50%"
-    />
+    <a class="boton-info">
+      <label for="label-boton-info">
+        <img
+          class="logo-wide"
+          src="./assets/logo-wide.png"
+          alt="logo-wide"
+          width="50%"
+        />
+      </label>
+    </a>
+    <input type="checkbox" id="label-boton-info" />
+    <div class="container-modal">
+      <div class="content-modal">
+        <h1>INFO</h1>
+        <p>
+          <strong>¿POR QUÉ LOS RENDERS ARQUITECTÓNICOS SON TAN IMPORTANTES?</strong>
+          <br>
+          Son una herramienta muy valiosa para
+          representar y vender proyectos de arquitectura de manera atractiva y
+          convincente.
+          <ul>
+            <li>Ayudan a los clientes a visualizar el proyecto terminado y a entender
+                mejor cómo se verá y funcionará.</li>
+            <li>Ofrecen una representación más precisa del proyecto que los dibujos a
+                mano o los planos.</li>
+            <li>Permiten mostrar diferentes perspectivas y opciones de diseño de
+                manera sencilla.</li>
+            <li>Ayudan a los clientes a tomar decisiones informadas sobre el proyecto,
+                ya que pueden ver cómo se verá en diferentes condiciones de luz y en
+                diferentes momentos del día.</li>
+            <li>Son una excelente manera de diferenciar tu trabajo de la competencia y
+                destacar en el mercado.</li>
+          </ul>
+          <p>En resumen, los renders arquitectónicos son una herramienta poderosa
+            para representar y vender proyectos de arquitectura de manera
+            atractiva y detallada.</p>
+          
+        </p>
+        <h1>CONTACTO</h1>
+        <p class="content-modal-texto">
+          <strong> PORTAFOLIO DIGITAL </strong> <br />
+          <a href="https://www.behance.net/caecarq" target="_blank"
+            >behance.net/caecarq</a
+          >
+          <br />
+          <br />
+          <strong> CORREO </strong> <br />
+          caec.arq@gmail.com
+          <br /><br />
+          <strong> REDES SOCIALES </strong> <br />
+          <a href="https://www.instagram.com/caec.escobar" target="_blank"
+            >Instagram</a
+          >
+        </p>
+        <img
+          src="./assets/CE-logo-rb.png"
+          alt="CE-logo-rb"
+          class="CE-logo-rb"
+        />
+        <div class="boton-cerrar">
+          <label for="label-boton-info">X</label>
+        </div>
+      </div>
+      <label for="label-boton-info" class="cerrar-modal"></label>
+    </div>
     <div class="main-container">
       <img class="ofertas" src="./assets/ofertas.png" alt="ofertas" />
       <img class="exterior" src="./assets/exterior.png" alt="exterior" />
@@ -55,10 +114,16 @@
         alt="isometricos"
       />
     </div>
+    <br />
     <div class="div-contacto">
       <div>
+        <a class="boton-info">
+          <label for="label-boton-info">
         <img class="contacto" src="./assets/contacto.png" alt="contacto" />
+      </label>
+    </a>
       </div>
+      <br />
     </div>
     <script>
       function initThemeSelector() {
@@ -81,5 +146,19 @@
 
       initThemeSelector();
     </script>
+
+    <!-- <script>
+      $(window).load(function () {
+        $(".info").click(function () {
+          $(".hover-info").show();
+        });
+        $(".hover-info").click(function () {
+          $(".hover-info").hide();
+        });
+        $(".CloseButton").click(function () {
+          $(".hover-info").hide();
+        });
+      });
+    </script> -->
   </body>
 </html>
